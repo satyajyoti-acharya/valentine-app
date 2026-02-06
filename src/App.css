@@ -37,10 +37,9 @@ body {
   font-size: 1.25rem;
   line-height: 1.7;
   margin-bottom: 24px;
-  max-width: 340px;
+  max-width: 360px;
 }
 
-/* Intro Rose Button */
 .rose-btn {
   font-size: 42px;
   background: #c9182b;
@@ -51,7 +50,6 @@ body {
   cursor: pointer;
 }
 
-/* Next Button */
 .next-btn {
   padding: 10px 26px;
   font-size: 16px;
@@ -62,7 +60,6 @@ body {
   cursor: pointer;
 }
 
-/* Final Message */
 .final-note {
   margin-top: 32px;
   text-align: center;
@@ -100,7 +97,7 @@ body {
   font-size: 18px;
 }
 
-.gajra {
+.gajra-text {
   display: block;
   font-size: 22px;
   color: #2e7d32;
