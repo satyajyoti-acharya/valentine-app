@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import rose from "./assets/rose.png";
+import brokenRose from "./assets/broken-rose.png";
+import gajra from "./assets/gajra.png";
+import bouquet from "./assets/bouquet.webp";
+
 
 function App() {
   const [scene, setScene] = useState(0);
@@ -38,7 +43,7 @@ function App() {
       {/* SCENE 1 – SINGLE ROSE */}
       {scene === 1 && (
         <div className="scene">
-          <img src={img("rose.png")} className="main-image" alt="Rose" />
+          <img src={rose} className="main-image" alt="Rose" />
           <button className="next-btn" onClick={() => setScene(2)}>
             Next →
           </button>
@@ -49,7 +54,7 @@ function App() {
       {scene === 2 && (
         <div className="scene">
           <img
-            src={img("broken-rose.png")}
+            src={brokenRose}
             className="main-image"
             alt="Broken Rose"
           />
@@ -67,7 +72,7 @@ function App() {
       {/* SCENE 3 – GAJRA */}
       {scene === 3 && (
         <div className="scene">
-          <img src={img("gajra.png")} className="main-image" alt="Gajra" />
+          <img src={gajra} className="main-image" alt="Gajra" />
           <p className="poem">
             Har wo gajrah jiska naam hi naa tha, <br />
             aapki baalon mein lagake <br />
@@ -82,7 +87,7 @@ function App() {
       {/* SCENE 4 – BOUQUET + FINAL MESSAGE */}
       {scene === 4 && (
         <div className="scene">
-          <img src={img("bouquet.webp")} className="main-image" alt="Bouquet" />
+          <img  src={bouquet} className="main-image" alt="Bouquet" />
 
           <p className="poem">
             Wo gulaab jo aapke samne aayitra rha tha, <br />
